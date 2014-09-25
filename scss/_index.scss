@@ -21,6 +21,7 @@
 					background-color: rgba(0, 0, 0, 0.2);
 					border-radius: 0 0 5px 5px;
 					ul {
+						margin: 0;
 						li {
 							display: inline;
 							float: right;
@@ -53,6 +54,7 @@
 					background-color: rgba(0, 0, 0, 0.2);
 					border-radius: 0 0 5px 5px;
 					ul {
+						margin: 0;
 						li {
 							display: inline-block;
 							a {
@@ -81,6 +83,7 @@
 					float: right;
 					margin-top: 20px;
 					ul {
+						margin: 0;
 						li {
 							display: inline-block;
 							float: right;
@@ -214,6 +217,7 @@
 									text-overflow: ellipsis;
 									overflow: hidden;
 									height: 144px;
+									margin: 0;
 								}
 							}
 							span {
@@ -284,6 +288,84 @@
 					}
 				}
 			}
+			#owl-demo {
+				direction: initial;
+				margin-bottom: 5px;
+				float: right;
+				.item {
+					margin: 3px;
+					img {
+						display: block;
+						width: 100%;
+						height: auto;
+					}
+					a {
+						display: block;
+						transition: all 0.5s ease;
+					}
+					&:hover {
+						a {
+							background-color: rgba(255,255,255,0.5);
+							transition: all 0.5s ease;
+							&:before {
+								font-family: FontAwesome;
+								font-size: 1.8em;
+								content: "\f0c1";
+								position: absolute;
+								color: #fff;
+								top: 40%;
+								left: 40%;
+								text-shadow: 1px 1px 0 #000;
+								z-index: 99999;
+								transition: all 0.5s ease;
+							}
+						}
+						img {
+							opacity: 0.5;
+							transition: all 0.5s ease;
+						}
+					}
+				}
+			}
+			.owl-controls {
+				position: relative;
+				.owl-buttons {
+					.owl-prev {
+						position: absolute;
+						left: 0px;
+						bottom: 3px;
+						width: 12px;
+						height: 114px;
+						background: #ccc;
+						&:before {
+							font-family: FontAwesome;
+							font-size: 0.7em;
+							content: "\f060";
+							position: absolute;
+							color: #444;
+							top: 46%;	
+							left: 2px;	
+						}
+					}
+					.owl-next {
+						position: absolute;
+						right: 0px;
+						bottom: 3px;
+						width: 12px;
+						height: 114px;
+						background: #ccc;
+						&:before {
+							font-family: FontAwesome;
+							font-size: 0.7em;
+							content: "\f061";
+							position: absolute;
+							color: #444;
+							top: 46%;	
+							right: 0px;	
+						}
+					}
+				}
+			}		
 			#carousel {
 				width: 100%;
 				float: right;
@@ -346,8 +428,8 @@
 							margin-bottom: 5px;
 						}
 						p {
-							text-align: justify;
 							color: #000;
+							margin: 0;
 						}
 					}
 				}
@@ -539,7 +621,6 @@
 					.meta {
 						float: right;
 						font-size: 0.78em;
-						text-align: justify !important;
 						padding: 0 0 0 10px;
 						color: #333;
 						direction: rtl;
@@ -578,7 +659,6 @@
 						font-size: 1em;
 						line-height: 1.5em;
 						color: #000;
-						text-align: justify;
 					}
 					h4 {
 						color: #8a1d1d;
@@ -732,11 +812,10 @@
 					width: 100%;
 					float: right;
 					background: #fff;
+					margin: 0;
 					li {
 						float: right;
 						width: 100%;
-						list-style-image: url(img/list-marker.jpg);
-						list-style-position: inside;
 						transition: all 0.5s ease;
 						&:hover {
 							background: #F0F0F0;
@@ -747,6 +826,11 @@
 							display: block;
 							padding: 5px 5px;
 							position: relative;
+							background-image: url('img/list-marker.jpg');
+							background-repeat: no-repeat;
+							background-position: right center;
+							padding-right: 10px;
+							margin-right: 5px;
 							&:after {
 								content: "";
 								height: 1px;
@@ -798,6 +882,7 @@
 			#comments-box {
 				float: right;
 				margin-bottom: 20px;
+				margin: 0;
 				.comments-title {
 					float: right;
 					margin: 10px 0;
@@ -1005,11 +1090,11 @@
 					}
 					.comment-body {
 						padding: 44px 0 0 5px;
-						text-align: justify;
 						line-height: 1.4em;
 						line-height: 1.3em;
 						font-size: 0.97em;
 						color: #505050;
+						margin: 0;
 					}
 				}
 				.form-box {
@@ -1158,9 +1243,8 @@
 						float: right;
 						padding: 5px 5px 5px 0;
 						line-height: 1.2em;
-						overflow: hidden;
-						text-overflow: ellipsis;
 						height: 58px;
+						margin: 0;
 						a{
 							color: #8a1d1d;
 							transition: all 0.5s;
@@ -1180,8 +1264,7 @@
 						height: 79px;
 						float: right;
 						width: 270px;
-						text-overflow: ellipsis;
-						overflow: hidden;
+						margin: 0;
 					}
 				}
 			}
@@ -1203,30 +1286,33 @@
 				}
 			}
 		}	
-		.mid-button {
-			background-image: url(img/button-bg.jpg);
-			background-repeat: repeat-x;
-			background-position: bottom left;
-			border: 1px solid #222;
-			margin: 5px 5px 5px 0;
-			padding: 1px 5px;
-			border-radius: 4px;
-			text-align: center;
-			transition: all 0.3s ease-out;
-			&:first-child {
-				margin-top: 0;
-			}
-			a {
-				font: 1.1em "w_yekan";
-				line-height: 1.3em;
-				text-shadow: 1px 1px 1px #6B6B6B;
-				display: block;
-			}
-			&:hover {
+		ul {
+			margin: 0;
+			.mid-button {
 				background-image: url(img/button-bg.jpg);
 				background-repeat: repeat-x;
-				background-position: top left;
+				background-position: bottom left;
+				border: 1px solid #222;
+				margin: 5px 5px 5px 0;
+				padding: 1px 5px;
+				border-radius: 4px;
+				text-align: center;
 				transition: all 0.3s ease-out;
+				&:first-child {
+					margin-top: 0;
+				}
+				a {
+					font: 1.1em "w_yekan";
+					line-height: 1.3em;
+					text-shadow: 1px 1px 1px #6B6B6B;
+					display: block;
+				}
+				&:hover {
+					background-image: url(img/button-bg.jpg);
+					background-repeat: repeat-x;
+					background-position: top left;
+					transition: all 0.3s ease-out;
+				}
 			}
 		}
 		.news-letter-box {
