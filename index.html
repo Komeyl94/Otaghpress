@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>اتاق پرس</title>
+
+	<link rel="stylesheet" href="css/ticker-style.css" media="all" />
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easy-ticker.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>	
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		
+	<link rel="stylesheet" href="style.css" media="all" />
+	<link rel="stylesheet" href="css/lemonade.css" media="all" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" media="all" />
+	<link rel="stylesheet" href="css/owl.carousel.css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" media="all" />
+
+	<script>
+	$(window).load(function(){
+		$('.flexslider1').flexslider({
+			animation: "fade",
+			easing: "linear",
+			controlNav: true,
+			controlsContainer: "",
+			prevText: "",
+			nextText: ""	        
+		});
+
+		$("#owl-demo").owlCarousel({
+			autoPlay: 3000,
+			items : 5,
+			navigation: true,
+			navigationText: ["",""],
+			itemsDesktop : [1199,5],
+			itemsDesktopSmall : [979,3]
+		});
+		var dd = $('.vticker').easyTicker({
+			direction: 'up',
+			speed: 'slow',
+			interval: 3000,
+			height: 'auto',
+			visible: 1,
+			mousePause: 1
+		}).data('easyTicker');
+	
+
+	});
+	</script>
+	<style>
+	#owl-demo {
+		direction: initial;
+		margin-bottom: 5px;
+		float: right;
+	}
+	#owl-demo .item {
+	  	margin: 3px;
+	}
+	#owl-demo .item img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.owl-controls {
+		position: relative;
+	}
+	.owl-buttons .owl-prev {
+		position: absolute;
+		left: 0px;
+		bottom: 3px;
+		width: 12px;
+		height: 114px;
+		background: #ccc;
+	}
+	.owl-buttons .owl-next {
+		position: absolute;
+		right: 0px;
+		bottom: 3px;
+		width: 12px;
+		height: 114px;
+		background: #ccc;
+	}
+	.owl-buttons .owl-next:before {
+		font-family: FontAwesome;
+		font-size: 0.7em;
+		content: "\f061";
+		position: absolute;
+		color: #444;
+		top: 46%;	
+		right: 0px;		
+	}
+	.owl-buttons .owl-prev:before {
+		font-family: FontAwesome;
+		font-size: 0.7em;
+		content: "\f060";
+		position: absolute;
+		color: #444;
+		top: 46%;	
+		left: 2px;	
+	}
+	#owl-demo .item a {
+		display: block;
+		transition: all 0.5s ease;
+	}
+	#owl-demo .item:hover a {
+		background-color: rgba(255,255,255,0.5);
+		transition: all 0.5s ease;
+	}
+	#owl-demo .item:hover a:before {
+		font-family: FontAwesome;
+		font-size: 1.8em;
+		content: "\f0c1";
+		position: absolute;
+		color: #fff;
+		top: 40%;
+		left: 40%;
+		text-shadow: 1px 1px 0 #000;
+		z-index: 99999;
+		transition: all 0.5s ease;
+	}
+	#owl-demo .item:hover img {
+		opacity: 0.5;
+		transition: all 0.5s ease;
+	}	
+	</style>
+</head>
+<body>
+
+<header id="header-main" class="frame">
+	<div class="background-image">
+		<div class="wrapper">
+			<nav id="first-nav">
+				<ul>
+					<li><a href="#">صفحه نخست</a></li>
+					<li><a href="#">پیوندها</a></li>
+					<li><a href="#">ارشیو اخبار</a></li>
+					<li><a href="#">خبرنامه</a></li>
+					<li><a href="#">درباره ما</a></li>
+					<li><a href="#">ارتباط با ما</a></li>
+				</ul>
+			</nav>
+			<nav id="social-nav">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</nav>
+			<div class="logo"><a href="#"><img src="img/logo.png" alt="اتاق پرس"></a></div>
+			<div class="ads-top">
+				
+			</div>
+			
+				<div class="vticker">
+					<ul>
+						<li class="news-item"><a href="#">لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی</a></li>
+						<li class="news-item"><a href="#">لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی</a></li>
+						<li class="news-item"><a href="#">لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی</a></li>
+						<li class="news-item"><a href="#">لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی</a></li>
+						<li class="news-item"><a href="#">لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی لورم ایپسوم متنی است آزمایشی برای قرار دادن در محل های آزمایشی</a></li>
+					</ul>
+				</div>
+			
+			<div class="frame">
+				<nav id="main-nav" class="bit-70">
+					<ul>
+						<li><a href="#">سیاسی</a></li>
+						<li><a href="#">علمی</a></li>
+						<li><a href="#">فرهنگی</a></li>
+						<li><a href="#">هنری</a></li>
+						<li><a href="#">تاریخی</a></li>
+						<li><a href="#">مذهبی</a></li>
+						<li><a href="#">بین الملل</a></li>
+						<li><a href="#">اجتماعی</a></li>
+					</ul>
+				</nav>
+				<div class="search bit-30">
+					<form action="" method="get">
+						<input type="search" placeholder="جستجو ...">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="body" class="frame">
+	<div class="wrapper">
+		<div class="frame">
+			<div class="index bit-60">
+				<div class="bit-71">
+					<div class="flexslider flexslider1 slider-small">
+			          <ul class="slides">
+			            <li>
+			            	
+				  	    	    <a href="#"><img src="img/1.jpg" /></a>
+								<div class="slide-text">
+									<div class="rutitr">به مناسبت روز قدس</div>
+									<h1><a href="#">رژه ارتش جمهوری اسلامی ایران</a></h1>
+									<p>
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+									</p>
+								</div>
+							<span>بیست و سوم شهریور 93</span>
+			  	    	</li>
+			  	    	<li>
+							
+				  	    	    <a href="#"><img src="img/2.jpg" /></a>
+								<div class="slide-text">
+									<div class="rutitr">سردار احمدی مقدم در جمع خبرنگاران</div>
+									<h1><a href="#">بین صحبت های رئیس جمهور و اقدامات نیروی انتظامی</a></h1>
+									<p>
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+									</p>
+								</div>
+							<span>بیست و چهارم شهریور 93</span>
+			  	    	</li>
+			  	    	<li>
+			            	
+				  	    	    <a href="#"><img src="img/3.jpg" /></a>
+								<div class="slide-text">
+									<div class="rutitr">برای شرکت در نشست سران شانگهای</div>
+									<h1><a href="#">روحانی قزاقستان را به مقصد تاجیکستان ترک کرد</a></h1>
+									<p>
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 	
+									</p>
+								</div>
+							<span>بیست و سوم شهریور 93</span>
+			  	    	</li>
+			  	    	<li>
+							
+				  	    	    <a href="#"><img src="img/4.jpg" /></a>
+								<div class="slide-text">
+									<div class="rutitr">صبح امروز در پی جراحی رهبر:</div>
+									<h1><a href="#">عیادت رفسنجانی رییس مجمع تشخیص مصلحت نظام با رهبر</a></h1>
+									<p>
+										لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+									</p>
+								</div>
+							<span>بیست و چهارم شهریور 93</span>
+			  	    	</li>
+			          </ul>
+			        </div>
+			    </div>
+			    <div class="bit-29">
+			    	<ul>
+						<li class="mid-button"><a href="#">نرخ ارز</a></li>
+						<li class="mid-button"><a href="#">قیمت طلا</a></li>
+						<li class="mid-button"><a href="#">شاخص بورس</a></li>
+						<li class="mid-button"><a href="#">قیمت خودرو</a></li>
+					</ul>
+					<div class="news-letter-box">
+						<div class="head">عضویت در خبرنامه</div>
+						<li>با عضویت در خبرنامه اتاق پرس از مزایای آن برخوردار شوید</li>
+						<form action="">
+							<input type="text" placeholder="آدرس ایمیل" />
+							<a href="#">اشتراک</a>
+						</form>
+						<span class="sms">سامانه پیامک 30002898</span>
+					</div>		    	
+			    </div>
+
+				<div id="owl-demo">
+				          
+				  <div class="item"><a href="#"><img src="img/carousel1.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel2.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel3.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel4.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel5.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel4.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel2.jpg" alt="Owl Image"></a></div>
+				  <div class="item"><a href="#"><img src="img/carousel5.jpg" alt="Owl Image"></a></div>
+				 
+				</div>					
+		        	<section class="latest-news-box bit-75">
+		        		<article class="post frame">
+		        			<header class="post-header frame">
+		        				<div class="rutitr">صبح امروز در پی جراحی رهبر:</div>
+		        				<h1><a href="#">عیادت رفسنجانی رییس مجمع تشخیص مصلحت نظام با رهبر</a></h1>
+		        			</header>
+			        		<div class="post-content">
+			        			<div class="post-thumbnail"><a href="#"><img src="img/2.jpg" alt=""></a></div>
+			        			<span class="post-date">بیست و پنجم شهریور 93</span>
+			        			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+			        		</div>
+		        		</article>
+		        		<article class="post frame">
+		        			<header class="post-header frame">
+		        				<div class="rutitr">سردار احمدی مقدم در جمع خبرنگاران</div>
+		        				<h1><a href="#">بین صحبت‌های رییس جمهور و اقدامات نیروی انتظامی </a></h1>
+		        			</header>
+			        		<div class="post-content">
+			        			<div class="post-thumbnail"><a href="#"><img src="img/3.jpg" alt=""></a></div>
+			        			<span class="post-date">بیست و پنجم شهریور 93</span>
+			        			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+			        		</div>
+		        		</article>
+		        		<article class="post frame">
+		        			<header class="post-header frame">
+		        				<div class="rutitr">برای شرکت در نشست سران شانگهای</div>
+		        				<h1><a href="#">روحانی قزاقستان را به مقصد تاجیکستان ترک کرد</a></h1>
+		        			</header>
+			        		<div class="post-content">
+			        			<div class="post-thumbnail"><a href="#"><img src="img/4.jpg" alt=""></a></div>
+			        			<span class="post-date">بیست و پنجم شهریور 93</span>
+			        			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+			        		</div>
+		        		</article>
+		        		<article class="post frame">
+		        			<header class="post-header frame">
+		        				<div class="rutitr">صبح امروز در پی جراحی رهبر:</div>
+		        				<h1><a href="#">عیادت رفسنجانی رییس مجمع تشخیص مصلحت نظام با رهبر</a></h1>
+		        			</header>
+			        		<div class="post-content">
+			        			<div class="post-thumbnail"><a href="#"><img src="img/2.jpg" alt=""></a></div>
+			        			<span class="post-date">بیست و پنجم شهریور 93</span>
+			        			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+			        		</div>
+		        		</article>
+		        		<article class="post frame">
+		        			<header class="post-header frame">
+		        				<div class="rutitr">صبح امروز در پی جراحی رهبر:</div>
+		        				<h1><a href="#">عیادت رفسنجانی رییس مجمع تشخیص مصلحت نظام با رهبر</a></h1>
+		        			</header>
+			        		<div class="post-content">
+			        			<div class="post-thumbnail"><a href="#"><img src="img/5.jpg" alt=""></a></div>
+			        			<span class="post-date">بیست و سوم شهریور 93</span>
+			        			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+			        		</div>
+		        		</article>
+		        		<article class="post frame">
+		        			<header class="post-header frame">
+		        				<div class="rutitr">سردار احمدی مقدم در جمع خبرنگاران</div>
+		        				<h1><a href="#">بین صحبت‌های رییس جمهور و اقدامات نیروی انتظامی </a></h1>
+		        			</header>
+			        		<div class="post-content">
+			        			<div class="post-thumbnail"><a href="#"><img src="img/6.jpg" alt=""></a></div>
+			        			<span class="post-date">بیست و سوم شهریور 93</span>
+			        			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+			        		</div>
+		        		</article>
+		        	</section>
+		        	<div class="bit-25">
+		        		<aside class="widget-column">
+		        			<div class="widget frame" id="prices">
+		        				<header class="widget-header frame">نرخ امروز ارز</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="widget frame" id="prices">
+		        				<header class="widget-header frame">نرخ امروز ارز</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="widget frame" id="stock">
+		        				<header class="widget-header frame">بازار بورس</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="widget frame" id="prices">
+		        				<header class="widget-header frame">نرخ امروز ارز</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="widget frame" id="stock">
+		        				<header class="widget-header frame">بازار بورس</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="widget frame" id="prices">
+		        				<header class="widget-header frame">نرخ امروز ارز</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="widget frame" id="stock">
+		        				<header class="widget-header frame">بازار بورس</header>
+		        				<div class="widget-content">
+		        					<ul>
+		        						<li>
+		        							<div class="bit-2"><span>دلار:</span></div>
+		        							<div class="bit-2"><span>32900</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>یورو:</span></div>
+		        							<div class="bit-2"><span>56000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>درهم:</span></div>
+		        							<div class="bit-2"><span>27000</span></div>
+		        						</li>
+		        						<li>
+		        							<div class="bit-2"><span>دینار</span></div>
+		        							<div class="bit-2"><span>65000</span></div>
+		        						</li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        		</aside>
+		        	</div>	        
+			</div>  <!-- .index .bit-60 END -->
+			<div class="bit-40">
+				<div class="bit-1">
+					<div class="wide-ad"><img src="img/wide.gif" alt=""></div>
+					<div class="wide-ad"><img src="img/wide.gif" alt=""></div>
+				</div>
+				<div class="bit-62">
+					<div class="first-ad-column">
+						<div class="ad"><a href="#"><img src="img/ad1.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad2.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad3.jpg" alt=""></a></div>
+					</div>
+					<aside id="sidebar" class="sidebar-left">
+						<div class="widget frame" id="latest-posts">
+							<header class="widget-header frame">آخرین اخبار</header>
+							<div class="widget-content frame">
+								<ul>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="widget frame" id="fav-posts">
+							<header class="widget-header frame">محبوب ترین اخبار</header>
+							<div class="widget-content frame">
+								<ul>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+									<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+									<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+									<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+									<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+								</ul>
+							</div>
+								
+						</div>
+					</aside>
+					<div class="overflow-box">
+						<header>
+							<h1>
+								<a href="#">گفت و گوی خبری / والدانو: اگر گواردیولا موتزارت است مورینیو هم سالیری است</a>
+							</h1>
+						</header>
+						<div class="content">
+							<a href="#"><img src="img/7.jpg" alt=""></a>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است باشد.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="bit-37">
+					<div class="second-ad-column">
+						<div class="ad"><a href="#"><img src="img/ad4.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad5.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad6.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad7.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad8.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad9.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad10.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad11.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad7.jpg" alt=""></a></div>
+						<div class="ad"><a href="#"><img src="img/ad4.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div><!-- .index .bit-40 END -->
+		</div> <!-- .frame END -->
+		<div class="frame">
+			<div class="bit-4">
+				<div class="bottom-widget frame">
+					<header class="frame">محبوب ترین اخبار</header>
+					<div class="widget-content frame">
+						<ul>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bit-4">
+				<div class="bottom-widget frame">
+					<header class="frame">بین الملل</header>
+					<div class="widget-content frame">
+						<ul>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bit-4">
+				<div class="bottom-widget frame">
+					<header class="frame">ایران و جهان</header>
+					<div class="widget-content frame">
+						<ul>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bit-4">
+				<div class="bottom-widget frame">
+					<header class="frame">برون مرزی</header>
+					<div class="widget-content frame">
+						<ul>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+							<li><a href="#">رهبر انتقلاب راهی بیمارستان شد</a></li>
+							<li><a href="#">دیدار هاشمی رفسنجانی با دکتر محمود</a></li>
+							<li><a href="#">لزوم کرامت بخشی بانوان در ایران</a></li>
+							<li><a href="#">دکتر محمود احمدی نژاد به ملاقات رهبر انقلاب</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 	<!-- .index .wrapper END -->
+</div>	<!-- #body END -->
+<footer id="main-footer" class="frame">
+	<div class="footer-background">
+		<div class="wrapper">
+			<div class="frame">
+				<div class="bit-1">
+					<nav class="footer-top">
+						<ul>
+							<li><a href="#">صفحه نخست</a></li>
+							<li><a href="#">پیوند ها</a></li>
+							<li><a href="#">آرشیو اخبار</a></li>
+							<li><a href="#">خبرنامه</a></li>
+							<li><a href="#">درباره ما</a></li>
+							<li><a href="#">ارتباط با ما</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="bit-1">
+					<div class="footer-logo"><a href="#"><img src="img/logo2.png" alt=""></a></div>
+					<div class="footer-text">
+						<p class="copy-right">تمامی حقوق تصاویر و مطالب این وب سایت مربوط به اتاق پرس می باشد.</p>
+						<span class="year">1393 - 2014</span>
+					</div>
+					<div class="designerfa">
+						<a href="http://designerfa.ir" target="_blank"><img src="img/desginerfa.png" alt=""></a>
+						<span>طرحی از دیزاینرفا</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

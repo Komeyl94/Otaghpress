@@ -1,0 +1,70 @@
+/*
+*
+* Lemonade v1.1
+* Copyright 2013, Joe Richardson
+* lemonade.im
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Set the width of the grid */
+.frame {
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Attribute selector */
+[class*='bit-'] {
+  float: right;
+}
+
+/* Floats last ".bit-" to the right */
+[class*='bit-']:last-of-type {
+  float: left;
+}
+
+/* Main Widths */
+.bit-1  { width: 100%; }
+.bit-2  { width: 50%; }
+.bit-3  { width: 33.33%; }
+.bit-4  { width: 238.75px; }
+.bit-5  { width: 20%; }
+.bit-6  { width: 16.6666666667%; }
+.bit-7  { width: 14.2857142857%; }
+.bit-8  { width: 12.5%; }
+.bit-9  { width: 11.1111111111%; }
+.bit-10 { width: 10%; }
+.bit-11 { width: 9.09090909091%; }
+.bit-12 { width: 8.33%; }
+
+.bit-20 { width: 20%; }
+.bit-30 { width: 30%; }
+
+.bit-25 { width: 150px; } 
+.bit-29 { width: 174px; }
+.bit-37 { width: 150px; }
+.bit-40 { width: 400px; }
+.bit-60 { width: 600px; }
+.bit-62 { width: 250px; }
+.bit-71 { width: 426px; }
+.bit-75 { width: 450px; }
+
+.bit-70 { width: 70%; }
