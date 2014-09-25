@@ -1425,7 +1425,7 @@
 						transform: rotate(180deg);
 					}
 				}
-				.widget-content {
+				div {
 					background: #fff;
 					border: 1px solid #ddd;
 					overflow: hidden;
@@ -1442,6 +1442,7 @@
 								transition: all 0.5s;
 								text-overflow: ellipsis;
 								white-space: nowrap;
+								height: 22px;
 								display: block;
 								a:hover {
 									color: #8a1d1d;

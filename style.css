@@ -339,11 +339,11 @@ a:hover { text-decoration: none; -webkit-transition: all .8s ease-out; transitio
 #body .wrapper .bit-4 .bottom-widget { list-style: none; }
 #body .wrapper .bit-4 .bottom-widget header { background: url(img/bottom-widget-head.jpg) repeat-x; margin-right: 0px; width: 144px; height: 32px; font-size: 1.1em; color: #F0F0F0; text-align: right; text-shadow: 1px 1px 0px #000; padding-left: 5px; padding-right: 27px; position: relative; line-height: 1.5em; font-size: 1.3em; }
 #body .wrapper .bit-4 .bottom-widget header:before { font-family: Fontawesome; content: "\f04b"; font-size: .6em; line-height: 0.2em; top: 15px; right: 9px; color: #ffc000; position: absolute; text-shadow: -1px -1px 1px #2E2E2E; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
-#body .wrapper .bit-4 .bottom-widget .widget-content { background: #fff; border: 1px solid #ddd; overflow: hidden; }
-#body .wrapper .bit-4 .bottom-widget .widget-content ul { margin: 15px 0 15px 5px; overflow: hidden; }
-#body .wrapper .bit-4 .bottom-widget .widget-content ul li { list-style-image: url(img/list-marker.jpg); margin-right: 20px; padding-right: 2px; padding-bottom: 4px; }
-#body .wrapper .bit-4 .bottom-widget .widget-content ul li a { color: #000; -webkit-transition: all 0.5s; transition: all 0.5s; text-overflow: ellipsis; white-space: nowrap; display: block; }
-#body .wrapper .bit-4 .bottom-widget .widget-content ul li a a:hover { color: #8a1d1d; -webkit-transition: all 0.5s; transition: all 0.5s; }
+#body .wrapper .bit-4 .bottom-widget div { background: #fff; border: 1px solid #ddd; overflow: hidden; }
+#body .wrapper .bit-4 .bottom-widget div ul { margin: 15px 0 15px 5px; overflow: hidden; }
+#body .wrapper .bit-4 .bottom-widget div ul li { list-style-image: url(img/list-marker.jpg); margin-right: 20px; padding-right: 2px; padding-bottom: 4px; }
+#body .wrapper .bit-4 .bottom-widget div ul li a { color: #000; -webkit-transition: all 0.5s; transition: all 0.5s; text-overflow: ellipsis; white-space: nowrap; height: 22px; display: block; }
+#body .wrapper .bit-4 .bottom-widget div ul li a a:hover { color: #8a1d1d; -webkit-transition: all 0.5s; transition: all 0.5s; }
 #body .wrapper .bit-4:last-of-type { margin-left: 0; }
 #body .wrapper .wide-ad { float: left; margin-bottom: 5px; width: 389px; }
 #body .wrapper .wide-ad img { width: 100%; }
