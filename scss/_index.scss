@@ -1219,6 +1219,8 @@
 								a {
 									color: #000;
 									transition: all 0.5s;
+									height: 22px;
+									display: block;
 									&:hover {
 										color: #8a1d1d;
 										transition: all 0.5s;
@@ -1279,10 +1281,15 @@
 			float: left;
 			max-height: 1680px;
 			overflow: hidden;
+			height: initial;
 			.ad {
 				margin-bottom: 2px;
 				img {
 					width: 100%;
+				}
+				a {
+					display: block;
+					height: inherit;
 				}
 			}
 		}	
@@ -1429,6 +1436,12 @@
 					background: #fff;
 					border: 1px solid #ddd;
 					overflow: hidden;
+					margin: 0 auto;
+					&:after {
+						content: "";
+						display: table;
+						clear: both;
+					}
 					ul {
 						margin: 15px 0 15px 5px;
 						overflow: hidden;
@@ -1480,6 +1493,7 @@ footer#main-footer {
 			margin: 0 auto;
 			width: 425px;
 			ul {
+				margin:0;
 				li {
 					display: inline-block;
 					font-size: 1.1em;
@@ -1501,6 +1515,7 @@ footer#main-footer {
 			margin-top: 30px;
 			.copy-right {
 				color: #fff;
+				margin: 0 !important;
 			}
 		}
 		.designerfa {
